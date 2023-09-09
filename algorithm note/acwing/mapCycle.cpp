@@ -6,6 +6,7 @@ using namespace std;
 class mapCycleJudge
 {
 private:
+
     //@back result
     bool cycleJudge = false;
 
