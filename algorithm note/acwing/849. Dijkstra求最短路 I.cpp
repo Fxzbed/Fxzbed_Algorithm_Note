@@ -2,13 +2,13 @@
 #include <algorithm>
 #include <cmath>
 #include <cstring>
-#include <queue>
 
 using namespace std;
 
 constexpr int N = 510;
-int dist[N], g[N][N], n, m;
-bool isT[N];
+
+int g[N][N], dist[N], n, m;
+bool st[N];
 
 int dijkstra() {
     memset(dist, 0x3f, sizeof dist);
@@ -17,15 +17,14 @@ int dijkstra() {
     for (int i = 0; i < n; i ++) {
         int t = -1;
         for (int j = 1; j <= n; j ++) 
-            if (!isT[j] && (t == -1 || dist[t] > dist[j])) 
+            if (!st[j] && (t == -1 || dist[t] > dist[j])) 
                 t = j;
-
-        
-        isT[t] = true;
+                
+        st[t] = true;
         for (int j = 1; j <= n; j ++) 
-            dist[j] = min(dist[j], dist[t] + g[t][j]);
-
+            dist[j] = min(dist[j], dist[t] + g[t][j]);  //各个点从1到j的距离    t是已经选中的这一步走的最短距离
     }
+    
     return dist[n] == 0x3f3f3f3f ? -1 : dist[n];
 }
 
@@ -40,7 +39,6 @@ int main(void) {
         g[a][b] = min(g[a][b], c);
     }
     
-    int res = dijkstra();
-    
-    cout << res << endl;
+    cout << dijkstra() << endl;
+    return 0;
 }
