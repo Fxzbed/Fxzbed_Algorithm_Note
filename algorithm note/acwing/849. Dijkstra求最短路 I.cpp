@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstring>
-
+//没有优化过的dijkstra
 using namespace std;
 
 constexpr int N = 510;
