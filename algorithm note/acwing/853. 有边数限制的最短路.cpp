@@ -11,7 +11,7 @@ struct edge {
     int b;
     int w;
 };
-edge E[M];
+edge E[M];  //为了遍历所有的边
 
 int dist[N], n, m, k, backup[N];
 
