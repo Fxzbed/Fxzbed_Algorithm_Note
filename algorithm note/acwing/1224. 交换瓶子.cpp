@@ -10,13 +10,9 @@ int main(void) {
     for (int i = 1; i <= n; i ++) cin >> a[i];
 
     for (int i = 1; i <= n; i ++) {
-        if (a[i] != i) {
-            for (int j = i + 1; j <= n; j ++) {
-                if (a[j] == i) {
-                    swap(a[i], a[j]);
-                    res ++;
-                }
-            }
+        while (a[i] != i) {
+            swap(a[i], a[a[i]]);
+            res ++;
         }
     }
     cout << res;
