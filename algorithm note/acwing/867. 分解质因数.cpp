@@ -26,7 +26,5 @@ int main(void) {
         cin >> a[i];
         dividesPrime(a[i]);
     }
-
-
     return 0;
 }
