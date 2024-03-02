@@ -1,4 +1,4 @@
-## StarryCoding Algorithm Note - 1 - 输入输出与前缀和差分
+## *StarryCoding Algorithm Note - 1 - 输入输出与前缀和差分*
 
 ### *1. 输入*
 
