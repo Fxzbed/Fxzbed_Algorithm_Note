@@ -1,6 +1,6 @@
-# Leetcode_review
+# Fxzbed_Algorithm_Note
 
-- self Leetcode review by Fxzbed
+- self Algorithm note by Fxzbed
 
 - code and problem
 
