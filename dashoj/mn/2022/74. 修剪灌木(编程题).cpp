@@ -1,3 +1,4 @@
+//打表
 // #include <bits/stdc++.h>
 
 // using namespace std;
@@ -45,6 +46,25 @@
 
 // }
 
+
+/*
+
+获得数据如下
+1: 0
+2: 2 2
+3: 4 2 4
+4: 6 4 4 6
+5: 8 6 4 6 8
+6: 10 8 6 6 8 10
+7: 12 10 8 6 8 10 12
+8: 14 12 10 8 8 10 12 14
+9: 16 14 12 10 8 10 12 14 16
+10: 18 16 14 12 10 10 12 14 16 18
+11: 20 18 16 14 12 10 12 14 16 18 20
+12: 22 20 18 16 14 12 12 14 16 18 20 22
+
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -56,14 +76,12 @@ int n, h[N], idx;
 int main(void) {
     ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
     cin >> n;
-
+    
     if (n % 2) {
         idx = n / 2 + 1;
         h[idx] = n - 1;
-        // cout << idx << ' ' << h[idx] << endl;
         for (int i = idx - 1; i >= 1; i --) {
-            h[i] = h[i + 1] + 2;
-            // cout << i << ' ' << h[i] << ' ' << h[i + 1] + 2 << endl; 
+            h[i] = h[i + 1] + 2; 
             h[n - i + 1] = h[i];
         }
     } else {
