@@ -22,16 +22,16 @@ int binary_search(int l, int r, int t) {
 
 int main(void) {
     cin >> k >> s >> front >> back;
-    for (int i = 0; i < (int)s.size(); i ++) {
+    for (int i = 0; i < s.size(); i ++) {
         if (s[i] == front) f.push_back(i);
         else if (s[i] == back) b.push_back(i);
     }
     
     auto bs = b.size();
 
-    for (int i = 0; i < (int)f.size(); i ++) {
+    for (int i = 0; i < f.size(); i ++) {
         int idx = binary_search(0, b.size(), f[i] + k - 1);
-        if (idx < (int)b.size()) ans += (int)bs - idx;
+        if (idx < b.size()) ans += bs - idx;
     }
 
     cout << ans;
