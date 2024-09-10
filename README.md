@@ -1,10 +1,10 @@
 # Fxzbed_Algorithm_Note
 
-- self Algorithm note by Fxzbed
+[StarryCoding Note](./StarryCoding/StarryCoding-Note/README.md)
 
-- code and problem
+![img](/Volumes/Fxzbed_Mobiledrive/Code/Fxzbed_Algorithm_Note/README.assets/logo_long-geKG9c_V.png)
 
-```c
+```shell
                                                                   
     ,---,.                                                        
   ,'  .' |                          ,---,                   ,---, 
