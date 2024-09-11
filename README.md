@@ -1,4 +1,4 @@
-# Fxzbed_Algorithm_Note
+<h1 style="text-align: center;"><i>Fxzbed Algorithm Note</i></h1>
 
 [StarryCoding Note](./StarryCoding/StarryCoding-Note/README.md)
 
